@@ -1,0 +1,6 @@
+A userspace version of ipfw and dummynet, using netmap for packet I/O.
+On an i7-3400, this version is able to process over 6 million packets 
+per second (Mpps) with simple rulesets, and over 2.2 Mpps through 
+dummynet pipes, 5..10 times faster than the in-kernel equivalent.
+
+WWW: http://info.iet.unipi.it/~luigi/dummynet/
