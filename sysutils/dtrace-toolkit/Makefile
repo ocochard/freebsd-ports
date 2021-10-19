@@ -16,7 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	opendtrace
 GH_PROJECT=	toolkit
 GH_TAGNAME=	ec23e25c8995bfa50cd7c0058129f1f489fdabb4
-USE_RUBY=	yes
+#USE_RUBY=	yes
 SHEBANG_FILES=	Apps/shellsnoop \
 		Code/Perl/func_abc.pl \
 		Code/Perl/func_malloc.pl \
