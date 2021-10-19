@@ -17,6 +17,7 @@
 #	Default is "%%INTERFACE%%"
 
 . /etc/rc.subr
+: ${strongswan_enable="NO"}
 
 name=strongswan
 desc="Strongswan IPsec startup script"
