@@ -1,5 +1,5 @@
 PORTNAME=	pkt-gen
-PORTVERSION=	g2022.02.10
+PORTVERSION=	g2019.11.07
 CATEGORIES=	net
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -11,12 +11,12 @@ USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	luigirizzo
 GH_PROJECT=	netmap
-GH_TAGNAME=	278045b
+GH_TAGNAME=	95ef45d
 MAKEFILE=	GNUmakefile
 
 OPTIONS_DEFINE=	PCAP
-PCAP_DESC=	Support loading packets from pcap file
-OPTIONS_DEFAULT=	PCAP
+PCAP_DESC=	Support loading packet from pcap file
+OPTIONS_DEFAULT=PCAP
 PCAP_MAKE_ARGS=	WITH_PCAP=1
 
 PLIST_FILES=	bin/pkt-gen \
