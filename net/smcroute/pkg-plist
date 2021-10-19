@@ -1,3 +1,7 @@
-sbin/smcroute
+sbin/smcroutectl
+sbin/smcrouted
+%%PORTDOCS%%%%DOCSDIR%%/COPYING
+%%PORTDOCS%%%%DOCSDIR%%/README.md
+%%PORTDOCS%%%%DOCSDIR%%/smcroute.conf
 @sample etc/smcroute.conf.sample
 man/man8/smcroute.8.gz

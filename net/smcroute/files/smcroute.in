@@ -14,14 +14,7 @@
 
 name="smcroute"
 rcvar="${name}_enable"
-command="%%PREFIX%%/sbin/${name}"
-start_precmd="${name}_precmd"
-
-smcroute_precmd()
-{
-
-	rc_flags="$rc_flags -d"
-}
+command="%%PREFIX%%/sbin/${name}d"
 
 load_rc_config $name
 
