@@ -1,0 +1,50 @@
+#!/bin/sh
+#
+# PROVIDE: netmapfwd
+# REQUIRE: DAEMON
+#
+# Add the following line to /etc/rc.conf to enable netmap-fwd:
+#
+# netmapfwd_enable="YES"
+# netmapfwd_ifaces="<if1> <if2>..."
+#
+
+. /etc/rc.subr
+
+name=netmapfwd
+rcvar=netmapfwd_enable
+
+# read configuration
+load_rc_config ${name}
+
+# Default values
+netmapfwd_enable=${netmapfwd_enable:-"NO"}
+netmapfwd_ifaces=${netmapfwd_ifaces:-}          # netmap compliant ethernet interface(s)
+
+netmapfwd_precmd ()
+{
+	if [ -z "${netmapfwd_ifaces}" ]; then
+                warn "if name (netmapfwd_ifaces) not configured"
+                return 1
+	fi
+
+ 	ifaces=
+	for iface in ${netmapfwd_ifaces}; do
+            ifaces="${ifaces} ${iface}"
+	done
+
+	rc_flags="${rc_flags} ${ifaces}"
+}
+
+netmapfwd_start ()
+{
+	/usr/sbin/daemon ${command} ${rc_flags}
+}
+
+pidfile=/var/run/netmap-fwd.pid
+command="%%PREFIX%%/sbin/netmap-fwd"
+required_files="%%PREFIX%%/etc/netmap-fwd.conf"
+start_precmd=${name}_precmd
+start_cmd="netmapfwd_start"
+
+run_rc_command "$1"

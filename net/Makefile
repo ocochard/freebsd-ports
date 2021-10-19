@@ -504,6 +504,7 @@
     SUBDIR += netembryo
     SUBDIR += nethogs
     SUBDIR += netmap
+    SUBDIR += netmap-fwd
     SUBDIR += netpipes
     SUBDIR += netscript
     SUBDIR += netsed
