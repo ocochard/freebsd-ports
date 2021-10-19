@@ -1,6 +1,7 @@
 PORTNAME=	pimd
 PORTVERSION=	2.3.2
 CATEGORIES=	net
+PORTREVISION=  1
 
 MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	Lightweight stand-alone PIM-SM v2 multicast routing daemon
@@ -17,7 +18,7 @@ GH_SUBDIR=	libite:libite
 USE_RC_SUBR=	${PORTNAME}
 
 HAS_CONFIGURE=	yes
-MAKE_ARGS=	prefix="${PREFIX}" sysconfdir="${PREFIX}/etc/"
+MAKE_ARGS=	prefix="${PREFIX}" sysconfdir="${PREFIX}/etc"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pimd ${STAGEDIR}${PREFIX}/sbin/
