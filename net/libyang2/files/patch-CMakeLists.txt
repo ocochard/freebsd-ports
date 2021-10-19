@@ -1,0 +1,11 @@
+--- CMakeLists.txt.orig	2021-10-13 16:55:40 UTC
++++ CMakeLists.txt
+@@ -27,7 +27,7 @@ endif()
+ string(TOUPPER "${CMAKE_BUILD_TYPE}" BUILD_TYPE_UPPER)
+ if ("${BUILD_TYPE_UPPER}" STREQUAL "RELEASE")
+     set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Build Type" FORCE)
+-    set(CMAKE_C_FLAGS "-DNDEBUG -O2 ${CMAKE_C_FLAGS}")
++    set(CMAKE_C_FLAGS "-DNDEBUG ${CMAKE_C_FLAGS}")
+ elseif("${BUILD_TYPE_UPPER}" STREQUAL "DEBUG")
+     set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "Build Type" FORCE)
+     set(CMAKE_C_FLAGS "-g3 -O0 ${CMAKE_C_FLAGS}")
