@@ -1162,6 +1162,7 @@
     SUBDIR += qt5-network
     SUBDIR += qt5-networkauth
     SUBDIR += quagga
+    SUBDIR += quagga-bgp-netgen
     SUBDIR += queso
     SUBDIR += quiche
     SUBDIR += quiterss
