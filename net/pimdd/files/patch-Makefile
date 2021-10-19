@@ -17,7 +17,7 @@
  ### Compilation flags for different platforms. Uncomment only one of them
  ## FreeBSD
 -CFLAGS= -Wall -g	-Iinclude/freebsd ${MCAST_INCLUDE} ${SNMPDEF} ${RSRRDEF} ${MISCDEFS} -DFreeBSD -DPIM
-+CFLAGS+=	${MCAST_INCLUDE} ${SNMPDEF} ${RSRRDEF} ${MISCDEFS} -DFreeBSD -DPIM -Dlog=logit ${CPPFLAGS}
++CFLAGS+=	${MCAST_INCLUDE} ${SNMPDEF} ${RSRRDEF} ${MISCDEFS} -DFreeBSD -DPIM -Dlog=logit ${CPPFLAGS} -DRAW_INPUT_IS_RAW -DRAW_OUTPUT_IS_RAW
  
  ## NetBSD   -DNetBSD is done by OS
  #CFLAGS= -Wall -g	-Iinclude/netbsd ${MCAST_INCLUDE} ${SNMPDEF} ${RSRRDEF} ${MISCDEFS} -DPIM
