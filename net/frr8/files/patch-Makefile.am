@@ -1,0 +1,10 @@
+--- Makefile.am.orig	2021-08-12 19:48:24 UTC
++++ Makefile.am
+@@ -149,7 +149,6 @@ include watchfrr/subdir.am
+ include qpb/subdir.am
+ include fpm/subdir.am
+ include grpc/subdir.am
+-include tools/subdir.am
+ 
+ include bgpd/subdir.am
+ include bgpd/rfp-example/librfp/subdir.am

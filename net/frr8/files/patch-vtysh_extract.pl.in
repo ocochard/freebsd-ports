@@ -1,0 +1,13 @@
+--- vtysh/extract.pl.in.orig	2021-07-21 13:06:19 UTC
++++ vtysh/extract.pl.in
+@@ -42,7 +42,9 @@ sub scan_file {
+ 
+     $cppadd = $fabricd ? "-DFABRICD=1" : "";
+ 
+-    open (FH, "@CPP@ -P -std=gnu11 -DHAVE_CONFIG_H -DVTYSH_EXTRACT_PL -Ivtysh/@top_builddir@ -Ivtysh/@top_srcdir@ -Ivtysh/@top_srcdir@/lib -Ivtysh/@top_builddir@/lib -Ivtysh/@top_srcdir@/bgpd -Ivtysh/@top_srcdir@/bgpd/rfapi @LUA_INCLUDE@ @CPPFLAGS@ @LIBYANG_CFLAGS@ $cppadd $file |");
++    $command_line = "@CPP@ -P -std=gnu11 -DHAVE_CONFIG_H -DVTYSH_EXTRACT_PL -Ivtysh/@top_builddir@ -Ivtysh/@top_srcdir@ -Ivtysh/@top_srcdir@/lib -Ivtysh/@top_builddir@/lib -Ivtysh/@top_srcdir@/bgpd -Ivtysh/@top_srcdir@/bgpd/rfapi @LUA_INCLUDE@ @CPPFLAGS@ @LIBYANG_CFLAGS@ $cppadd $file |";
++    open (FH, $command_line)
++	|| die "Open to the pipeline failed: $!\n\nCommand Issued:\n$command_line";
+     local $/; undef $/;
+     $line = <FH>;
+     if (!close (FH)) {
