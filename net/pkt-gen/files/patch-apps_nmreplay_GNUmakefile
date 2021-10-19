@@ -1,0 +1,11 @@
+--- apps/nmreplay/GNUmakefile.orig	2019-11-21 06:26:42 UTC
++++ apps/nmreplay/GNUmakefile
+@@ -14,7 +14,7 @@ CFLAGS += -Werror -Wall -Wunused-function
+ CFLAGS += -I $(SRCDIR)/sys -I $(SRCDIR)/apps/include -I $(SRCDIR)/libnetmap
+ CFLAGS += -Wextra
+ 
+-LDFLAGS += -L $(BUILDDIR)/build-libnetmap
++LDFLAGS += -L ../../libnetmap
+ LDLIBS += -lnetmap -lpthread
+ ifeq ($(shell uname),Linux)
+ 	LDLIBS += -lrt	# on linux

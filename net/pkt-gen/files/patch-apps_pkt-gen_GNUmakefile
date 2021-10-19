@@ -1,0 +1,11 @@
+--- apps/pkt-gen/GNUmakefile.orig	2019-11-21 06:24:22 UTC
++++ apps/pkt-gen/GNUmakefile
+@@ -14,7 +14,7 @@ CFLAGS += -Werror -Wall -Wunused-function
+ CFLAGS += -I $(SRCDIR)/sys -I $(SRCDIR)/apps/include -I $(SRCDIR)/libnetmap
+ CFLAGS += -Wextra -Wno-address-of-packed-member
+ 
+-LDFLAGS = -L $(BUILDDIR)/build-libnetmap
++LDFLAGS = -L ../../libnetmap
+ LDLIBS += -lpthread -lm -lnetmap
+ ifeq ($(shell uname),Linux)
+ 	LDLIBS += -lrt	# on linux
