@@ -344,6 +344,7 @@
     SUBDIR += l2tpd
     SUBDIR += ladvd
     SUBDIR += lambdamoo
+    SUBDIR += landrop
     SUBDIR += latd
     SUBDIR += ldap-stats
     SUBDIR += ldapbrowser
