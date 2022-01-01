@@ -1515,7 +1515,6 @@
     SUBDIR += traff
     SUBDIR += trafshow
     SUBDIR += trafshow3
-    SUBDIR += tramp
     SUBDIR += trickle
     SUBDIR += tsclient
     SUBDIR += tsctp
