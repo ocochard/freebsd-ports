@@ -207,6 +207,7 @@
     SUBDIR += google-cloud-sdk-app-engine-go
     SUBDIR += gopher
     SUBDIR += goreplay
+    SUBDIR += gorss
     SUBDIR += gotthard
     SUBDIR += gq
     SUBDIR += graphpath
