@@ -1,8 +1,8 @@
 PORTNAME=	pkt-gen
-PORTVERSION=	g2019.11.07
+PORTVERSION=	g2022.02.10
 CATEGORIES=	net
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	Packet sink/source using the netmap API
 
 LICENSE=	BSD2CLAUSE
@@ -11,12 +11,12 @@ USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	luigirizzo
 GH_PROJECT=	netmap
-GH_TAGNAME=	95ef45d
+GH_TAGNAME=	278045b
 MAKEFILE=	GNUmakefile
 
 OPTIONS_DEFINE=	PCAP
-PCAP_DESC=	Support loading packet from pcap file
-OPTIONS_DEFAULT=PCAP
+PCAP_DESC=	Support loading packets from pcap file
+OPTIONS_DEFAULT=	PCAP
 PCAP_MAKE_ARGS=	WITH_PCAP=1
 
 PLIST_FILES=	bin/pkt-gen \
