@@ -492,6 +492,7 @@
     SUBDIR += nats-server
     SUBDIR += nats-streaming-server
     SUBDIR += nats-top
+    SUBDIR += natscli
     SUBDIR += nbd-server
     SUBDIR += nbdkit
     SUBDIR += nc
