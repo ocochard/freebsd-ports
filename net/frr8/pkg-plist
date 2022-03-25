@@ -1,4 +1,5 @@
 %%VTYSH%%bin/vtysh
+%%SHARPD%%sbin/sharpd
 include/frr/agg_table.h
 include/frr/atomlist.h
 include/frr/assert.h
@@ -95,6 +96,7 @@ include/frr/pw.h
 include/frr/queue.h
 include/frr/qobj.h
 include/frr/ringbuf.h
+include/frr/route_opaque.h
 include/frr/route_types.h
 include/frr/routemap.h
 include/frr/routing_nb.h
@@ -200,6 +202,7 @@ share/yang/frr-bgp.yang
 share/yang/frr-deviations-bgp-datacenter.yang
 share/yang/frr-ospf-route-map.yang
 share/yang/frr-ospf6-route-map.yang
+share/yang/frr-ospfd.yang
 share/yang/frr-bfdd.yang
 share/yang/frr-eigrpd.yang
 share/yang/frr-interface.yang
