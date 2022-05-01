@@ -288,6 +288,7 @@
     SUBDIR += istgt
     SUBDIR += iwnet
     SUBDIR += ixl_unlock
+    SUBDIR += iwnet
     SUBDIR += java-beepcore
     SUBDIR += jcifs
     SUBDIR += jgroups
