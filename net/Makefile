@@ -289,6 +289,7 @@
     SUBDIR += isc-dhcp44-server
     SUBDIR += istgt
     SUBDIR += ixl_unlock
+    SUBDIR += iwnet
     SUBDIR += java-beepcore
     SUBDIR += jcifs
     SUBDIR += jgroups
