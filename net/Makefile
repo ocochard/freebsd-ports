@@ -289,7 +289,6 @@
     SUBDIR += isc-dhcp44-relay
     SUBDIR += isc-dhcp44-server
     SUBDIR += istgt
-    SUBDIR += ixl_unlock
     SUBDIR += iwnet
     SUBDIR += ixl_unlock
     SUBDIR += java-beepcore
