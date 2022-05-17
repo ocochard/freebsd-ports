@@ -1,9 +1,9 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
 
 PORTNAME=	keyboard
-PORTVERSION=	0.3.1
+PORTVERSION=	0.4.0
 CATEGORIES=	x11
-MASTER_SITES=	http://www.defora.org/os/download/download/4453/
+MASTER_SITES=	https://ftp.defora.org/pub/DeforaOS/Apps/Desktop/src/Keyboard/
 PKGNAMEPREFIX=	deforaos-
 DISTNAME=	Keyboard-${PORTVERSION}
 
@@ -16,10 +16,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libDesktop.so:x11/deforaos-libdesktop \
 		libSystem.so:devel/deforaos-libsystem \
 		libfontconfig.so:x11-fonts/fontconfig \
-		libfreetype.so:print/freetype2
+		libfreetype.so:print/freetype2 \
+		libharfbuzz.so:print/harfbuzz
 
 USES=		desktop-file-utils gnome pkgconfig xorg
-USE_GNOME=	gtk20 cairo gdkpixbuf2
+USE_GNOME=	gtk30 cairo gdkpixbuf2
 USE_XORG=	x11 xtst
 MAKE_ARGS+=	PREFIX=${PREFIX}
 
