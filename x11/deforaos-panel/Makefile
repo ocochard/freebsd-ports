@@ -1,10 +1,9 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
 
 PORTNAME=	deforaos-panel
-PORTVERSION=	0.3.6
-PORTREVISION=	1
+PORTVERSION=	0.4.2
 CATEGORIES=	x11
-MASTER_SITES=	http://www.defora.org/os/download/download/4417/
+MASTER_SITES=	https://ftp.defora.org/pub/DeforaOS/Apps/Desktop/src/Panel/
 DISTNAME=	Panel-${PORTVERSION}
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -13,22 +12,21 @@ COMMENT=	DeforaOS desktop panel
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_FreeBSD_13=	network.c:298:19: error: variable has incomplete type 'struct ifdatareq'
-BROKEN_FreeBSD_14=	network.c:298:19: error: variable has incomplete type 'struct ifdatareq'
-
 LIB_DEPENDS=	libDesktop.so:x11/deforaos-libdesktop \
 		libSystem.so:devel/deforaos-libsystem \
 		libfontconfig.so:x11-fonts/fontconfig \
-		libfreetype.so:print/freetype2
-BUILD_DEPENDS=	browser:x11-fm/deforaos-browser
+		libfreetype.so:print/freetype2 \
+		libxkbfile.so:x11/libxkbfile
+BUILD_DEPENDS=	deforaos-browser:x11-fm/deforaos-browser
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:misc/hicolor-icon-theme \
 		sudo:security/sudo
 
 USES=		gnome pkgconfig xorg
-USE_GNOME=	gtk20 cairo
+USE_GNOME=	gtk30 cairo
 USE_XORG=	x11
 MAKE_ARGS+=	PREFIX=${PREFIX}
 USE_LDCONFIG=	yes
+CFLAGS+=	-I${LOCALBASE}/include
 
 MAKE_ENV=	MANDIR=${STAGEDIR}${MANPREFIX}/man
 
