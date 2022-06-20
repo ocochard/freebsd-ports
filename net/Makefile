@@ -1399,6 +1399,7 @@
     SUBDIR += ryu
     SUBDIR += s5cmd
     SUBDIR += sacc
+    SUBDIR += sakisafe
     SUBDIR += samba412
     SUBDIR += samba413
     SUBDIR += samplicator
