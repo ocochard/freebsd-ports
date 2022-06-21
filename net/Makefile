@@ -248,8 +248,8 @@
     SUBDIR += hlmaster
     SUBDIR += honeyd
     SUBDIR += hostapd
-    SUBDIR += hostapd29
     SUBDIR += hostapd-devel
+    SUBDIR += hostapd29
     SUBDIR += hping3
     SUBDIR += hsflowd
     SUBDIR += htpdate
