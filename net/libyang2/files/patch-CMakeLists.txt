@@ -1,6 +1,6 @@
---- CMakeLists.txt.orig	2021-10-13 16:55:40 UTC
+--- CMakeLists.txt.orig	2022-05-06 06:57:14 UTC
 +++ CMakeLists.txt
-@@ -27,7 +27,7 @@ endif()
+@@ -31,7 +31,7 @@ if ("${BUILD_TYPE_UPPER}" STREQUAL "RELEASE")
  string(TOUPPER "${CMAKE_BUILD_TYPE}" BUILD_TYPE_UPPER)
  if ("${BUILD_TYPE_UPPER}" STREQUAL "RELEASE")
      set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Build Type" FORCE)
