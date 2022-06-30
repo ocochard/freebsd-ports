@@ -319,7 +319,6 @@
     SUBDIR += kimap
     SUBDIR += kio-gdrive
     SUBDIR += kippo
-    SUBDIR += kissd
     SUBDIR += kitinerary
     SUBDIR += kldap
     SUBDIR += kmailtransport
