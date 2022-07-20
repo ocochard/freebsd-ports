@@ -1,5 +1,3 @@
-# Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-
 PORTNAME=	libsystem
 PORTVERSION=	0.4.3
 CATEGORIES=	devel
