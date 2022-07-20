@@ -1,5 +1,3 @@
-# Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-
 PORTNAME=	libdesktop
 PORTVERSION=	0.4.1
 CATEGORIES=	x11
