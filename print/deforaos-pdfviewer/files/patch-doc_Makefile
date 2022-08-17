@@ -1,4 +1,4 @@
---- doc/Makefile.orig	2017-01-13 17:04:41 UTC
+--- doc/Makefile.orig	2020-01-17 06:34:10 UTC
 +++ doc/Makefile
 @@ -1,4 +1,4 @@
 -TARGETS	= $(OBJDIR)pdfviewer.1 $(OBJDIR)pdfviewer.html $(OBJDIR)pdfviewer.xml
@@ -6,17 +6,17 @@
  OBJDIR	=
  PREFIX	= /usr/local
  DESTDIR	=
-@@ -22,7 +22,6 @@ $(OBJDIR)pdfviewer.xml: pdfviewer.xml.in
+@@ -21,7 +21,6 @@ clean:
+ 
  clean:
- 	$(RM) -- $(pdfviewer.1_OBJS) $(pdfviewer.html_OBJS) $(pdfviewer.xml_OBJS)
  	./docbook.sh -c -P "$(PREFIX)" -- "$(OBJDIR)pdfviewer.1"
 -	./docbook.sh -c -P "$(PREFIX)" -- "$(OBJDIR)pdfviewer.html"
  	../tools/subst.sh -c -P "$(PREFIX)" -- "$(OBJDIR)pdfviewer.xml"
  
  distclean: clean
-@@ -30,10 +29,8 @@ distclean: clean
+@@ -29,10 +28,8 @@ install: all
  
- install: $(TARGETS)
+ install: all
  	./docbook.sh -P "$(DESTDIR)$(PREFIX)" -i -- "$(OBJDIR)pdfviewer.1"
 -	./docbook.sh -P "$(DESTDIR)$(PREFIX)" -i -- "$(OBJDIR)pdfviewer.html"
  

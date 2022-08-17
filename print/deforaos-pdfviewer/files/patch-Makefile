@@ -1,0 +1,17 @@
+--- Makefile.orig	2022-08-17 23:43:04 UTC
++++ Makefile
+@@ -100,14 +100,11 @@ install: all
+ 		if [ -n "$(OBJDIR)" ]; then \
+ 		$(MAKE) OBJDIR="$(OBJDIR)$$i/" install; \
+ 		else $(MAKE) install; fi) || exit; done
+-	$(MKDIR) $(DESTDIR)$(PREFIX)/share/doc/$(PACKAGE)
+-	$(INSTALL) -m 0644 COPYING $(DESTDIR)$(PREFIX)/share/doc/$(PACKAGE)/COPYING
+ 
+ uninstall:
+ 	@for i in $(SUBDIRS); do (cd "$$i" && \
+ 		if [ -n "$(OBJDIR)" ]; then \
+ 		$(MAKE) OBJDIR="$(OBJDIR)$$i/" uninstall; \
+ 		else $(MAKE) uninstall; fi) || exit; done
+-	$(RM) -- $(DESTDIR)$(PREFIX)/share/doc/$(PACKAGE)/COPYING
+ 
+ .PHONY: all subdirs clean distclean dist distcheck install uninstall tests

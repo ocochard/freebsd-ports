@@ -1,8 +1,8 @@
 PORTNAME=	pdfviewer
-PORTVERSION=	0.0.2
+PORTVERSION=	0.1.0
 PORTREVISION=	38
 CATEGORIES=	print
-MASTER_SITES=	http://www.defora.org/os/download/download/4431/
+MASTER_SITES=	https://ftp.defora.org/pub/DeforaOS/Apps/Desktop/src/PDFViewer/
 PKGNAMEPREFIX=	deforaos-
 DISTNAME=	PDFViewer-${PORTVERSION}
 
@@ -15,11 +15,13 @@ LIB_DEPENDS=	libSystem.so:devel/deforaos-libsystem \
 		libDesktop.so:x11/deforaos-libdesktop \
 		libpoppler-glib.so:graphics/poppler-glib \
 		libfontconfig.so:x11-fonts/fontconfig \
-		libfreetype.so:print/freetype2
+		libfreetype.so:print/freetype2 \
+		libharfbuzz.so:print/harfbuzz
 
 MAKE_ARGS+=	PREFIX=${PREFIX}
 USES=		desktop-file-utils gnome pkgconfig
-USE_GNOME=	gtk20 gdkpixbuf2 cairo
+USE_GNOME=	gtk30 gdkpixbuf2 cairo
+USE_XORG=	x11
 MAKE_ENV+=	MANDIR=${STAGEDIR}${MANPREFIX}/man
 
 OPTIONS_DEFINE=	DOCS NLS
@@ -35,11 +37,6 @@ post-patch-DOCS-off:
 post-patch-NLS-off:
 	${REINPLACE_CMD} 's|po src tools|src tools|' \
 		${WRKSRC}/Makefile
-
-post-patch:
-	@${REINPLACE_CMD} 's|-Wl,-pie||g' \
-		${WRKSRC}/tools/Makefile \
-		${WRKSRC}/src/Makefile
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/pdfviewer
