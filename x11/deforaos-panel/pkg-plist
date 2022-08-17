@@ -25,6 +25,7 @@ lib/Panel/applets/desktop.so
 lib/Panel/applets/embed.so
 lib/Panel/applets/gps.so
 lib/Panel/applets/gsm.so
+lib/Panel/applets/leds.so
 lib/Panel/applets/lock.so
 lib/Panel/applets/logout.so
 lib/Panel/applets/memory.so
@@ -32,10 +33,11 @@ lib/Panel/applets/menu.so
 lib/Panel/applets/mixer.so
 lib/Panel/applets/network.so
 lib/Panel/applets/pager.so
-lib/Panel/applets/phone.so
 lib/Panel/applets/rotate.so
 lib/Panel/applets/separator.so
+lib/Panel/applets/shutdown.so
 lib/Panel/applets/spacer.so
+lib/Panel/applets/suspend.so
 lib/Panel/applets/swap.so
 lib/Panel/applets/systray.so
 lib/Panel/applets/tasks.so
@@ -50,10 +52,14 @@ libdata/pkgconfig/Panel.pc
 %%PORTDOCS%%man/man1/panel-notify.1.gz
 %%PORTDOCS%%man/man1/panel.1.gz
 %%PORTDOCS%%man/man1/panelctl.1.gz
+%%PORTDOCS%%man/man1/settings.1.gz
 %%PORTDOCS%%man/man1/wifibrowser.1.gz
-share/applications/deforaos-panel-settings.desktop
-share/applications/deforaos-settings.desktop
-share/applications/deforaos-wifibrowser.desktop
+share/applications/org.defora.panel-settings.desktop
+share/applications/org.defora.settings.desktop
+share/applications/org.defora.wifibrowser.desktop
+%%PORTDOCS%%share/doc/Panel/COPYING
+%%PORTDOCS%%share/doc/Panel/README.md
+%%PORTDOCS%%share/doc/Panel/wpa_supplicant.conf
 share/icons/hicolor/16x16/apps/panel-applet-bluetooth.png
 share/icons/hicolor/16x16/apps/panel-applet-desktop.png
 share/icons/hicolor/16x16/apps/panel-applet-usb.png
@@ -72,5 +78,6 @@ share/icons/hicolor/48x48/apps/panel-applet-bluetooth.png
 share/icons/hicolor/48x48/apps/panel-applet-desktop.png
 share/icons/hicolor/48x48/apps/panel-settings.png
 share/icons/hicolor/scalable/apps/panel-applet-bluetooth.svg
-%%NLS%%share/locale/fr/LC_MESSAGES/Panel.mo
+%%NLS%%share/locale/de/LC_MESSAGES/Panel.mo
 %%NLS%%share/locale/es/LC_MESSAGES/Panel.mo
+%%NLS%%share/locale/fr/LC_MESSAGES/Panel.mo

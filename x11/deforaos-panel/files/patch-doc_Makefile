@@ -1,8 +1,8 @@
---- doc/Makefile.orig	2022-05-12 16:20:33 UTC
+--- doc/Makefile.orig	2022-05-18 00:06:01 UTC
 +++ doc/Makefile
-@@ -104,19 +104,12 @@ install: all
- 
- install: all
+@@ -166,19 +166,12 @@ install: all
+ 		else $(MAKE) install; fi) || exit; done
+ 	./gtkdoc.sh -P "$(DESTDIR)$(PREFIX)" -i -- "$(OBJDIR)gtkdoc/html.stamp"
  	./docbook.sh -P "$(DESTDIR)$(PREFIX)" -i -- "$(OBJDIR)panel.1"
 -	./docbook.sh -P "$(DESTDIR)$(PREFIX)" -i -- "$(OBJDIR)panel.html"
  	./docbook.sh -P "$(DESTDIR)$(PREFIX)" -i -- "$(OBJDIR)panelctl.1"

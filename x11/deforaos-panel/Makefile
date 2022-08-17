@@ -1,5 +1,5 @@
 PORTNAME=	deforaos-panel
-PORTVERSION=	0.4.2
+PORTVERSION=	0.4.3
 CATEGORIES=	x11
 MASTER_SITES=	https://ftp.defora.org/pub/DeforaOS/Apps/Desktop/src/Panel/
 DISTNAME=	Panel-${PORTVERSION}
