@@ -620,6 +620,7 @@
     SUBDIR += nvidia-drm-61-kmod
     SUBDIR += nvidia-drm-kmod
     SUBDIR += nvidia-texture-tools
+    SUBDIR += nvtop
     SUBDIR += ocaml-cairo
     SUBDIR += ocaml-images
     SUBDIR += ocaml-lablgl

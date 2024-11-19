@@ -1,0 +1,5 @@
+bin/nvtop
+share/applications/nvtop.desktop
+share/icons/nvtop.svg
+share/man/man1/nvtop.1.gz
+share/metainfo/nvtop.metainfo.xml
