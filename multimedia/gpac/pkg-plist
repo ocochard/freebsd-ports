@@ -185,7 +185,7 @@ libdata/pkgconfig/gpac.pc
 %%X11%%%%DATADIR%%/gui/icons/tray.svg
 %%X11%%%%DATADIR%%/gui/icons/tv.svg
 %%X11%%%%DATADIR%%/gui/icons/up.svg
-%%X11%%%DATADIR%%/gui/icons/world.svg
+%%X11%%%%DATADIR%%/gui/icons/world.svg
 %%DATADIR%%/python/__init__.py
 %%DATADIR%%/python/libgpac/__init__.py
 %%DATADIR%%/python/libgpac/libgpac.py
