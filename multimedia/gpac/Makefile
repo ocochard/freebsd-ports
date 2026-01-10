@@ -34,7 +34,6 @@ A52_CONFIGURE_OFF=	--use-a52=no
 CACA_LIB_DEPENDS=	libcaca.so:graphics/libcaca
 CACA_CONFIGURE_OFF=	--use-libcaca=no
 FAAD_LIB_DEPENDS=	libfaad.so:audio/faad
-FFMPEG_BROKEN=		Compilation fails with our recent version
 FFMPEG_LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 FFMPEG_CONFIGURE_OFF=	--use-ffmpeg=no
 FREETYPE_LIB_DEPENDS=	libfreetype.so:print/freetype2
