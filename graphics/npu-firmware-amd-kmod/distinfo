@@ -1,0 +1,15 @@
+TIMESTAMP = 1794863642
+SHA256 (linux-firmware/20261019/amdnpu/1502_00/npu.sbin.1.5.2.380) = 718142a5778b003e5cc2719c9785772b67e5b4e6fa64cba0632a3c0466030bcc
+SIZE (linux-firmware/20261019/amdnpu/1502_00/npu.sbin.1.5.2.380) = 246656
+SHA256 (linux-firmware/20261019/amdnpu/1502_00/npu.sbin.1.5.5.391) = d13ff9fb95c6cea40213fa69e5a3465529f00bb67c0984d62343c6e31808fb9e
+SIZE (linux-firmware/20261019/amdnpu/1502_00/npu.sbin.1.5.5.391) = 248592
+SHA256 (linux-firmware/20261019/amdnpu/17f0_10/npu.sbin.1.0.0.63) = 81831072efc3db9e0a1038cded24afd2e67a29434de550e51a19544de05ba91a
+SIZE (linux-firmware/20261019/amdnpu/17f0_10/npu.sbin.1.0.0.63) = 376768
+SHA256 (linux-firmware/20261019/amdnpu/17f0_10/npu.sbin.1.1.2.64) = 7ed0f242f253b581eb75c8c8b34638d92fba598063b635a541beb94869245469
+SIZE (linux-firmware/20261019/amdnpu/17f0_10/npu.sbin.1.1.2.64) = 429680
+SHA256 (linux-firmware/20261019/amdnpu/17f0_11/npu.sbin.1.0.0.166) = 7f1cc47f1b462d9267486818ede34e7936c312d48e14cfa0a7e357e4600e9a17
+SIZE (linux-firmware/20261019/amdnpu/17f0_11/npu.sbin.1.0.0.166) = 376768
+SHA256 (linux-firmware/20261019/amdnpu/17f0_11/npu.sbin.1.1.2.65) = 3e3c996ef1e562e96ee4c4d90faa9faf1132c72da3af1bcf35d592cc34903fed
+SIZE (linux-firmware/20261019/amdnpu/17f0_11/npu.sbin.1.1.2.65) = 429680
+SHA256 (linux-firmware/20261019/LICENSES/LICENSE.amdnpu) = 8878d6ddf5f941f81d0b532cd5d63329d81c6f1603f917f3a14b2c8cd032a503
+SIZE (linux-firmware/20261019/LICENSES/LICENSE.amdnpu) = 1186

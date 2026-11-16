@@ -1,0 +1,6 @@
+Firmware for the AMD XDNA neural processing units (NPU) of Ryzen AI
+processors: Phoenix and Hawk Point (1022:1502), Strix Point and Strix
+Halo (1022:17f0).  The amdxdna driver hands it to the
+platform security processor at attach.  The files come from
+linux-firmware and are installed as raw files under /boot/firmware/amdnpu/,
+where firmware(9) loads them on demand.

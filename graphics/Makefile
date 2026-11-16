@@ -632,6 +632,7 @@
     SUBDIR += nomacs
     SUBDIR += nplot
     SUBDIR += npretty
+    SUBDIR += npu-firmware-amd-kmod
     SUBDIR += nsxiv
     SUBDIR += nurbs++
     SUBDIR += nvidia-drm-515-kmod
