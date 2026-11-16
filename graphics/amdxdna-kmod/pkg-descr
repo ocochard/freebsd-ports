@@ -1,0 +1,10 @@
+amdxdna drives the neural processing unit (NPU) of AMD Ryzen AI
+processors, an array of AI Engine tiles (XDNA and XDNA 2) that runs
+machine learning workloads at low power.  It is the Linux amdxdna
+driver from the accel subsystem, ported to FreeBSD on top of drm-kmod
+and LinuxKPI.  It exposes /dev/accel/accel0 for AMD's XRT runtime
+(devel/xrt).
+
+On FreeBSD it runs in carveout mode: NPU buffers come from one
+physically contiguous region reserved at attach, because FreeBSD has no
+IOMMU shared virtual addressing.

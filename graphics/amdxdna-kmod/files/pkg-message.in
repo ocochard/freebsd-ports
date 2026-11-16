@@ -1,0 +1,19 @@
+[
+{ type: install
+  message: <<EOM
+amdxdna needs kernel support that is not in FreeBSD yet: the LinuxKPI
+and AMD IOMMU fixes of the olivier-npu branch of
+https://github.com/ocochard/freebsd-src.  The NPU firmware also needs
+the AMD IOMMU enabled.  In /boot/loader.conf:
+
+  hw.amdiommu.enable="1"
+  hw.amdxdna.carveout_mb="8192"
+
+The carveout is the memory reserved for NPU buffers, in MB: about 1024
+for the XRT tests, several GB for language models.  Then load the
+driver, or add it to kld_list in /etc/rc.conf:
+
+  kldload amdxdna
+EOM
+}
+]

@@ -60,6 +60,7 @@
     SUBDIR += alizams
     SUBDIR += aloadimage
     SUBDIR += alpng
+    SUBDIR += amdxdna-kmod
     SUBDIR += ampasACES-container
     SUBDIR += ampasCTL
     SUBDIR += animorph
