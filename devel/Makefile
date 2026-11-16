@@ -9040,6 +9040,7 @@
     SUBDIR += xorg-macros
     SUBDIR += xparam
     SUBDIR += xpeviewer
+    SUBDIR += xrt
     SUBDIR += xsd
     SUBDIR += xsimd
     SUBDIR += xtensa-esp-elf

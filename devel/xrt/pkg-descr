@@ -1,0 +1,3 @@
+XRT is the runtime library and tools used to run workloads on AMD
+NPU (Ryzen AI, XDNA) and Xilinx accelerator devices.  This port builds
+the NPU flavour: base runtime, OpenCL ICD and xrt-smi.

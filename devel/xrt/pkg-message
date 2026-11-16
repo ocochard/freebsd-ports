@@ -1,0 +1,16 @@
+[
+{ type: install
+  message: <<EOM
+XRT drives the NPU through the amdxdna driver (graphics/amdxdna-kmod).
+
+"xrt-smi validate" runs test programs from an AMD archive that is not
+part of XRT.  For Strix Point and Strix Halo, as the user who runs it:
+
+  mkdir -p ~/.local/share/xrt/2.27.0/amdxdna/bins
+  fetch -o ~/.local/share/xrt/2.27.0/amdxdna/bins/ \
+      https://raw.githubusercontent.com/Xilinx/VTD/main/archive/strx/xrt_smi_strx.a
+
+Phoenix and Hawk Point use phx/xrt_smi_phx.a instead.
+EOM
+}
+]
